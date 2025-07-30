@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="assets/latte.png">
+  <title>MruCafe</title>
+</head>
+<body>
+        
+<header>
+  <nav class="header__nav">
+    <div class="nav-logo">MruCafe</div>
+
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="#about-us">About Us</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#our-cats">Our Cats</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>   
+
+    <ul>
+      <li class="hideOnMobile"><a href="#about-us">About Us</a></li>
+      <li class="hideOnMobile"><a href="#menu">Menu</a></li>
+      <li class="hideOnMobile"><a href="#our-cats">Our Cats</a></li>
+      <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+
+  </nav>
+
+  <div class="header__image">
+    <img src="assets/tlo.jpg" alt="kawa">
+    <h1>Welcome to <br> MruCafe</h1>
+  </div>
+</header>
+
+
+
+<!-- POCZĄTEK SEKCJI  ABOUT US -->
+<section id="about-us" class="about-section">
+  <h2 class="about-title">About Us</h2>
+  
+  <div class="about-content">
+    <!-- Lewa kolumna - zdjęcie -->
+    <div class="about-image">
+      <img src="assets/about.jpg" alt="Kot z kawą">
+    </div>
+    
+    <!-- Prawa kolumna - tekst -->
+    <div class="about-text">
+      <p>
+        W naszej kociej kawiarni łączymy pasję do kawy z miłością do kotów. Zapraszamy Cię do miejsca, gdzie możesz wypić pyszną kawę w towarzystwie przyjaznych i wesołych mruczków. Nasza przestrzeń jest pełna ciepła, spokoju i kociego uroku.
+      </p>
+      <p>
+        Każdy kot w naszej kawiarni jest do adopcji — możesz nie tylko spędzić czas z tymi uroczymi stworzeniami, ale także dać im nowy, kochający dom.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- KONIEC SEKCJI ABOUT US -->
+
+
+
+<!-- POCZĄTEK SEKCJI  MENU -->
+<section id="menu" class="menu-section">
+  <h2 class="menu-title">Menu</h2>
+
+  <div class="menu-grid">
+    <!-- Produkt 1 -->
+    <div class="menu-item">
+      <img src="assets/espresso.svg" alt="Espresso icon" class="menu-icon">
+      <h3>Espresso</h3>
+      <p class="description">Mała, mocna kawa dla prawdziwych fanów kofeiny.</p>
+      <span>9 zł</span>
+    </div>
+
+    <!-- Produkt 2 -->
+    <div class="menu-item featured">
+      <img src="assets/latte.svg" alt="Latte icon" class="menu-icon">
+      <h3>Latte</h3>
+      <p class="description">Delikatne połączenie espresso i mleka.</p>
+      <span>14 zł</span>
+    </div>
+
+    <!-- Produkt 3 -->
+    <div class="menu-item">
+      <img src="assets/cappuccino.svg" alt="Cappuccino icon" class="menu-icon">
+      <h3>Cappuccino</h3>
+      <p class="description">Klasyka z mleczną pianką i wyrazistym smakiem.</p>
+      <span>13 zł</span>
+    </div>
+  </div>
+
+  <div class="menu-more">
+    <a href="#full-menu" class="see-more-button">Zobacz inne napoje</a>
+  </div>
+</section>
+
+<!-- Dalsze menu na innej podstronie lub niżej -->
+<section id="full-menu" class="menu-section" style="display: none;">
+  <h2 class="menu-title">Pełne Menu</h2>
+  <div class="menu-grid">
+    <!-- Produkt 4 -->
+    <div class="menu-item">
+      <img src="assets/mocha.svg" alt="Mocha icon" class="menu-icon">
+      <h3>Mocha</h3>
+      <p class="description">Z mleczną pianką, czekoladą i aromatem espresso.</p>
+      <span>16 zł</span>
+    </div>
+
+    <!-- Produkt 5 -->
+    <div class="menu-item">
+      <img src="assets/tea.svg" alt="Tea icon" class="menu-icon">
+      <h3>Lemon Tea</h3>
+      <p class="description">Orzeźwiająca herbata z cytryną.</p>
+      <span>13 zł</span>
+    </div>
+
+    <!-- Produkt 6 -->
+    <div class="menu-item">
+      <img src="assets/tea.svg" alt="Tea icon" class="menu-icon">
+      <h3>Matcha</h3>
+      <p class="description">Zielona japońska herbata w stylu MruCafe.</p>
+      <span>17 zł</span>
+    </div>
+  </div>
+</section>
+<!-- KONIEC SEKCJI  MENU -->
+
+<!-- POCZĄTEK SEKCJI  CATS -->
+<section id="our-cats" class="cats-section">
+  <h2 class="section-title">Our Cats</h2>
+
+  <div class="cats-grid">
+
+    <div class="cat-card">
+      <img src="assets/cat1.jpg" alt="Kotek Luna">
+      <div class="overlay">
+      <h3>Luna</h3>
+      <p>3 lata – spokojna, uwielbia drzemki na oknie.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sit inventore neque voluptas! Officia culpa magnam voluptatum sunt ullam qui sapiente rem accusantium. Vel amet inventore aliquid quos aperiam cum.
+      </p></div>
+    </div>
+
+    <div class="cat-card">
+      <img src="assets/cat2.jpg" alt="Kotek Felix">
+      <div class="overlay">
+      <h3>Felix</h3>
+      <p>2 lata – energiczny, lubi zabawy i głaskanie.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero at quam animi corrupti dicta excepturi quos dignissimos sunt dolore fuga architecto, nobis, quisquam asperiores dolor suscipit dolores blanditiis minima perferendis.
+      </p></div>
+    </div>
+
+    <div class="cat-card">
+      <img src="assets/cat3.jpg" alt="Kotek Maja">
+      <div class="overlay">
+      <h3>Maja</h3>
+      <p>1,5 roku – ciekawska i przytulaśna.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magnam dignissimos similique rem modi blanditiis consectetur labore deleniti, beatae animi, quos debitis impedit fugit incidunt deserunt tempore harum eos a.
+      </p></div>
+    </div>
+
+    <div class="cat-card">
+      <img src="assets/cat4.jpg" alt="Kotek Leo">
+      <div class="overlay">
+      <h3>Leo</h3>
+      <p>4 lata – dostojny pan, który kocha spokój i kawowy zapach.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non necessitatibus accusamus, molestias perferendis quaerat suscipit voluptatum voluptatibus. Est minima at quia nam enim commodi quas illum! Est non veniam nesciunt.
+      </p></div>
+    </div>
+
+    <div class="cat-card">
+      <img src="assets/cat5.jpg" alt="Kotek Mimi">
+      <div class="overlay">
+      <h3>Mimi</h3>
+      <p>6 miesięcy – pełna energii i ciekawości, uczy się wszystkiego.
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, nisi. Laudantium asperiores autem distinctio quis amet pariatur velit, dolorum tenetur, doloribus repudiandae animi recusandae! Placeat reprehenderit itaque hic molestiae officia?</p></div>
+    </div>
+
+    <div class="cat-card">
+      <img src="assets/cat6.jpg" alt="Kotek Bruno">
+      <div class="overlay">
+      <h3>Bruno</h3>
+      <p>5 lat – leniuch i fan pieszczot, szczególnie na kolanach.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores dicta similique, sed quas quibusdam sint suscipit animi inventore itaque eos dolores culpa reprehenderit quod laudantium dolor! Adipisci, culpa at?
+      </p></div>
+
+    </div>
+  </div>
+</section>
+<!-- KONIEC SEKCJI  CATS -->
+
+<!-- POCZĄTEK SEKCJI  CONTAKT -->
+
+<section id="contact" class="contact-section">
+  <h2 class="section-title">Contact</h2>
+
+  <div class="contact-info">
+    <p><span class="emoji">📍</span> Kocia Kawiarnia „MruCafe”<br>
+    Ul. Puszysta 7, 00-001 Mruczkowo</p>
+
+    <p><span class="emoji">⏰</span> Otwarte: pon–ndz, 10:00–19:00</p>
+
+    <p><span class="emoji">📞</span> Tel: <a href="tel:+48123456789">+48 123 456 789</a></p>
+
+    <p><span class="emoji">✉️</span> E-mail: <a href="mailto:kontakt@mrucafe.pl">kontakt@mrucafe.pl</a></p>
+  </div>
+</section>
+
+<!-- KONIEC SEKCJI  CONTAKT -->
+ <script src="js/scripts.js"></script>
+
+</body>
+</html>
